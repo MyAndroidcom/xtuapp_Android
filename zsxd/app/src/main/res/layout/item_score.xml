@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_term"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="4dp"
+    android:background="@color/colorLightPrimary"
+    android:text="第一学期"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/textsize_caption"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:text="计算机基础"
+            android:textSize="@dimen/textsize_body"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_alignParentRight="true"
+            android:text="90"
+            android:textSize="@dimen/textsize_body"/>
+        </RelativeLayout>
+</LinearLayout>

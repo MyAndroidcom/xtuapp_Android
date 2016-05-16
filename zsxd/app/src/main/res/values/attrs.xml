@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="ScaleableImageView">
+        <attr name="aspect_ratio" format="reference|float" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="isApplyGesture" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xtuapp.zsxd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name=".application.APP">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GuideActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoTitleBar"/>
+        <activity android:name=".activity.HomeActivity"/>
+        <activity android:name=".activity.set.LoginActivity"/>
+        <activity android:name=".activity.set.MyMessageActivity"/>
+        <activity android:name=".activity.set.MyStorageActivity"/>
+        <activity android:name=".activity.set.HistoryActivity"/>
+        <activity android:name=".activity.set.ShopActivity"/>
+        <activity android:name=".activity.set.SettingActivity"/>
+        <activity android:name=".activity.set.AdviceActivity"/>
+        <activity android:name=".activity.home.SchoolActivity"/>
+        <activity android:name=".activity.home.ScoreActivity"/>
+        <activity android:name=".activity.home.LostActivity"/>
+        <activity android:name=".activity.home.MarKetActivity"/>
+        <activity android:name=".activity.home.JobActivity"/>
+        <activity android:name=".activity.home.PlayActivity"/>
+        <activity android:name=".activity.home.MapActivity"/>
+        <activity android:name=".activity.home.ScheduleActivity"/>
+        <activity android:name=".activity.home.BookActivity"/>
+        <activity android:name=".activity.topic.CommentActivity"/>
+        <activity android:name=".activity.topic.PostCommentActivity"/>
+    </application>
+</manifest>

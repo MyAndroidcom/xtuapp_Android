@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/height_tab_bottom"
+        android:layout_width="match_parent"
+        app:title="发表主题"
+        app:titleTextColor="@color/colorWhite"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ed_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="标题（可选）"
+            android:textSize="@dimen/textsize_body"
+            android:paddingLeft="8dp"
+            app:met_baseColor="@color/colorPrimaryText"
+            app:met_floatingLabel="highlight" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ed_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="内容"
+            android:paddingLeft="8dp"
+            android:gravity="top"
+            android:maxLines="8"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/textsize_body"
+            app:met_baseColor="@color/colorPrimaryText"
+            app:met_floatingLabel="highlight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageButton
+            android:id="@+id/photo_btn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_photo_indigo_a700_24dp"/>
+        <ImageButton
+            android:id="@+id/face_btn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_tag_faces_indigo_a700_24dp"/>
+        <ImageButton
+            android:id="@+id/im_btn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_camera_alt_indigo_a700_24dp"/>
+        <TextView
+            android:id="@+id/tv_imagesize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            android:textSize="@dimen/textsize_body"
+            android:gravity="right|center_vertical"
+            android:text="0/10"/>
+        </LinearLayout>
+
+        <com.xtuapp.zsxd.view.FlowLayout
+            android:id="@+id/fl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

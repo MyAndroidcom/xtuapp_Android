@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <Button
+        android:id="@+id/bt_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/vp_guide"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="120dp"
+        android:text="开始体验"
+        android:background="@color/colorWhite"
+        android:visibility="invisible"
+        android:textSize="@dimen/textsize_button"
+        android:textColor="@drawable/btn_tab_text_selector"
+        />
+
+</RelativeLayout>

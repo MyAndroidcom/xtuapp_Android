@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:paddingTop="100dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/textsize_subheading"
+        android:text="用户名："
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="建议用邮箱"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/set_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize_subheading"
+            android:text="设置密码:" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/text_password"
+            android:layout_toRightOf="@+id/text_name"
+            android:ems="15" />
+  </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize_subheading"
+            android:text="重置密码:" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="15" />
+   </TableRow>
+        <Button
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="提交"
+            android:textSize="@dimen/textsize_headline"/>
+</TableLayout>

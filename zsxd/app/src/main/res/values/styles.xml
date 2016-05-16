@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">@dimen/textsize_caption</item>
+        <item name="android:textColor">@drawable/btn_tab_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="image_login">
+        <item name="android:layout_width">@dimen/height_tab_bottom</item>
+        <item name="android:layout_height">@dimen/height_tab_bottom</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Dialog.Light">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Dialog.Dark">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorDivider2</item>
+    </style>
+</resources>

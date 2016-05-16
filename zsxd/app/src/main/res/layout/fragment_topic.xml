@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorDivider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/ra_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textsize_display2"
+        android:background="@color/colorDivider2"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_mess"
+        style="@style/BottomTabStyle"
+        android:checked="true"
+        android:text="发帖" />
+
+    <RadioButton
+        android:id="@+id/rb_hot"
+        style="@style/BottomTabStyle"
+        android:text="热门" />
+
+    <RadioButton
+        android:id="@+id/rb_quint"
+        style="@style/BottomTabStyle"
+        android:text="精华" />
+</RadioGroup>
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+        <View
+            android:id="@+id/vi_indicator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_menu_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fa_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_margin="16dp"
+            app:rippleColor="#33728dff"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_add_white_24dp"
+            app:borderWidth="0dp"/>
+    </FrameLayout>
+</LinearLayout>

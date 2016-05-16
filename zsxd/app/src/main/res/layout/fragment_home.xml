@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorHalf">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:maxLength="5"
+                android:ellipsize="end"
+                android:textSize="@dimen/textsize_caption" />
+            <!--设置新闻标题同级的几个点-->
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:fillColor="@color/colorPrimary"
+                app:pageColor="@color/colorWhite"
+                app:radius="3dp"
+                app:strokeWidth="0dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <GridView
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="8dp" />
+</LinearLayout>

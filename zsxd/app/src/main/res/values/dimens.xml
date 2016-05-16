@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="textsize_caption">13sp</dimen>
+    <dimen name="textsize_button">17sp</dimen>
+    <dimen name="textsize_body">15sp</dimen>
+    <dimen name="textsize_subheading">17sp</dimen>
+    <dimen name="textsize_title">21sp</dimen>
+    <dimen name="textsize_headline">24sp</dimen>
+    <dimen name="textsize_display1">34sp</dimen>
+    <dimen name="textsize_display2">45sp</dimen>
+    <dimen name="textsize_display3">56sp</dimen>
+    <dimen name="textsize_display4">112sp</dimen>
+    <dimen name="height_tab_bottom">56dp</dimen>
+    <dimen name="height_edittext">48dp</dimen>
+
+</resources>
